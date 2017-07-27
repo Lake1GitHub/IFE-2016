@@ -69,11 +69,9 @@
             this.templateQueue = JSON.parse(JSON.stringify(this.queue));
             if( element!==undefined ){
                 this.templateQueue = this.templateQueue.map(function(e){
-                    e = e.replace(new RegExp(element,'g'),"<span class='select'>"+ element +"</span>");
+                    e = e.replace(new RegExp(element, 'g'), "<span class='select'>" + element + "</span>");
                     return e;
                 });
-            } else{
-                this.templateQueue = this.queue;
             }
             getEle.ele.innerHTML = '';
 
