@@ -123,7 +123,10 @@
                 if( arguments[1]>0 ){
                     arr[arguments[1]-1].style.backgroundColor = 'white';
                 }
-            }, arr[i],i), i * 1000);
+                if( arguments[1] === arguments[2].length ){
+                    arr[arguments[1]].style.backgroundColor = 'white';
+                }
+            }, arr[i],i,arr), i * 1000);
         }
     }
     function package(){
