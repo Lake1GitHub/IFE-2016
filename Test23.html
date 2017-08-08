@@ -177,7 +177,9 @@
                 }
             } else{
                 clearInterval( handle );
-                arr[i-1].style.backgroundColor = 'white';
+                if(arr[i-1].style.backgroundColor!=='yellow'){
+                    arr[i - 1].style.backgroundColor = 'white';
+                }
             }
         }, 1000);
     }
