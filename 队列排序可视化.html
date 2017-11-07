@@ -19,6 +19,7 @@
      * 点击排序后，排序可视化
      */
     function inputCheck( num ){
+        if(num == null) return '数字输入有误';
         if( Math.round(num)<10 || Math.round(num)>100 ){
             return '数字输入有误';
         }
